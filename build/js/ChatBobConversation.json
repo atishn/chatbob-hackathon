@@ -61,6 +61,7 @@
     {
       "text": "These are the colors I got:",
       "user": "bob",
+      "image": "assets/palette.png",
       "input": false
     },
     {
