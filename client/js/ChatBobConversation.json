@@ -12,7 +12,7 @@
     },
     {
       "text": false,
-      "text": "assets/smiley.png",
+      "image": "assets/smiley.png",
       "user": "bob",
       "input": false
     },

@@ -12,7 +12,7 @@
     },
     {
       "text": false,
-      "text": "assets/smiley.png",
+      "image": "assets/smiley.png",
       "user": "bob",
       "input": false
     },
@@ -24,7 +24,7 @@
     {
       "text": "Mary",
       "user": "mary",
-      "input": "text"
+      "input": false
     },
     {
       "text": "Cool Mary. Nice to txt-meet you!",
@@ -148,7 +148,7 @@
       "input": "text"
     },
     {
-      "text": "Finally, here’s the Alex Sofa. This is a best-seller at Bob’s. It’s beautiful, it’s easy to remove fur and it’s staing resistant.",
+      "text": "Finally, here’s the Alex Sofa. This is a best-seller at Bob’s. It’s beautiful, it’s easy to remove fur and it’s stain resistant.",
       "user": "bob",
       "input": false
     },
@@ -194,7 +194,7 @@
       "input": false
     },
     {
-      "text": "I can help you talking talking to them. You know I’m funny 😝It can make the choosing process a little but easier. ",
+      "text": "I can help you talking talking to them. You know I’m funny 😝 It can make the choosing process a little but easier. ",
       "user": "bob",
       "input": false
     }

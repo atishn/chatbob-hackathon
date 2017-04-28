@@ -33,7 +33,7 @@ function showMessage(message) {
 
 	if (message.image) {
 		var img_el = document.createElement('img');
-		img_el.setAttribute('src', 'foo.png');
+		img_el.setAttribute('src', message.image);
 		message_el.appendChild(img_el);
 	}
 
