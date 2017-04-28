@@ -12,6 +12,7 @@ $white: #FFFFFF;
 $grey-100: #F6F8F9;
 $grey-200: #E3E6E9;
 $grey-300: #EFF1F3;
+$blue-grey-100: #AEB7CB;
 $blue-grey: #4E5974;
 $red: #D0011B;
 
@@ -22,6 +23,16 @@ body {
   font-size: 1em;
   height: 100vh;
   line-height: 1.5;
+}
+
+small {
+  color: $blue-grey-100;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
 
 div {
@@ -46,7 +57,7 @@ header {
   border-bottom: 1px solid $grey-200;
   position: relative;
   padding: 8px;
-  z-index: 50;
+  z-index: 2;
 
   div {
     float: left;
@@ -76,16 +87,22 @@ header {
 * Chat Window
 **/
 
-#chat {
-  bottom: 86px;
-  max-height: calc(100vh - 57px);
-  overflow: auto;
-  position: fixed;
-  padding: 16px 16px 16px 58px;
-  z-index: 10;
+.chat-outer {
+  height: calc(100vh - 134px);
+  overflow-y: scroll;
+  position: relative;
+}
 
-  div {
-    background: $white;
+#chat {
+  bottom: 0;
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  padding: 16px 16px 16px 58px;
+  width: 100%;
+  z-index: 1;
+
+  .user-message {
     border-radius: 6px;
     box-shadow: 0 6px 12px $grey-300;
     clear: both;
@@ -94,7 +111,12 @@ header {
     width: auto;
   }
 
-  .response-block {
+  .bob {
+    background: $white;
+    float: left;
+  }
+
+  .mary {
     background: $red;
     border-bottom-right-radius: 0;
     color: $white;
@@ -107,7 +129,6 @@ header {
       bottom: 0;
       height: 9px;
       left: 100%;
-      margin-bottom: -1px;
       margin-left: -6px;
       position: absolute;
       width: 11px;
@@ -128,21 +149,22 @@ header {
   padding: 16px;
   position: fixed;
   width: 100%;
-  z-index: 1;
 
-  input[type=text], button {
+  .chat-input, button {
     border: 0;
     border-radius: 6px;
     box-sizing: border-box;
+    height: 44px;
     outline: 0;
     padding: 10px 16px;
     display: block;
     float: left;
   }
 
-  input[type=text] {
+  .chat-input {
     background: $grey-200;
     margin-right: 16px;
+    position: relative;
     width: calc(82% - 16px);
   }
 
@@ -156,17 +178,9 @@ header {
       text-indent: -9999px;
     }
   }
-}
 
-.user-message {
-  padding: 10px;
-
-  &.mary {
-    background: #ccffcc;
-  }
-
-  &.bob {
-    background: #ccccff;
+  a {
+    float: left;
   }
 }
 
@@ -177,4 +191,72 @@ header {
   &.active {
     transform: translateY(0);
   }
+}
+
+.user-input--sofa {
+  padding-bottom: 12px;
+  z-index: 100;
+
+  a {
+    box-shadow: 0 6px 12px $grey-300;
+    margin: 4px 8px 0 0;
+  }
+}
+
+.user-input--camera {
+
+  input[type=file] {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-indent: -99999px;
+    top: 0;
+    width: 100%;
+    padding: 5px 0
+  }
+
+  img {
+    margin: auto;
+  }
+}
+
+.outer-scroll {
+  overflow-x: auto;
+  padding-bottom: 12px;
+
+  .inner-scroll {
+    width: 1000%;
+  }
+}
+
+.fake-website {
+  width: 100%;
+}
+
+// Logic and styling for showing chatbob box
+#toggle-chat {
+  display: none;
+}
+
+.bob-chat-activate {
+  display: block;
+  position: absolute;
+  top: 100px;
+  right: 30px;
+  width: 200px;
+  height: 45px;
+  background: red;
+  cursor: pointer;
+}
+
+.chatbob-iframe {
+  position: fixed;
+  bottom: 0;
+  right: 30px;
+  transform: translateY(100%);
+  transition: transform .6s;
+}
+
+#toggle-chat:checked ~ .chatbob-iframe {
+  transform: translateY(0);
 }
