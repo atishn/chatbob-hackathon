@@ -1,69 +1,97 @@
 
 // App structure stuffs
 // var structureJSON = require('ChatBobConversation.json');	// the json structure file
-var structure, current;
+var structure;
+var current = 0;
 var structureJSON = fetch('js/ChatBobConversation.json').then((response) => {
 	response.json().then((data) => {
 		structure = data; // JSON.parse(structureJSON);				// THIS parses the JSON into a javascript OBJECT
-		current = structure;   // this "holds" the position in the "tree choices"
+		console.log(data, structure);
 		startApp();
 	});
 });
 
 // UI stuffs
 var chatWindow = document.querySelector('#chat');			// get reference to chat window
-var response = document.querySelector('#response');		// the user input field
-var button = document.querySelector('#submit');				// the user input submit button
+var inputFields = document.querySelectorAll('.user-input'); // all user input field types
 
+/**
+ * Creates a message element for a user with optional image
+ * and posts it into the chat window.
+ * @param {Object} message A message object
+ */
+function showMessage(message) {
+	var message_el = document.createElement('div');
+	message_el.classList.add(message.user);
+	message_el.classList.add('user-message');
 
-// THIS will update the user's position in the TREE
-function updatePosition(choice) {
-	current = current.next[choice];
-	return current;
-}
-
-function showMessage(text) {
-	var message = document.createElement('div');
-	message.innerHTML =  text;  // "Hi there! I'm Little Bob!
-
-	chatWindow.appendChild(message);
-}
-
-function getInput(e) {
-	// do something. This will depend on where in the "structure" you are
-	console.log(input.value);
-}
-
-function step() {
-
-	// DO WE NEED A USER REPSONSE?
-	if (current.needResponse || 			// if needResponse is true
-		current.next.length > 1)  			// or, if there are multiple options
-	{
-		// await response
-		console.log('do something');
-		// listen for user input
-		button.addEventListener('click', getInput); 
-	}  else {
-	// OTHERWISE, WAIT AND SHOW NEXT
-		button.removeEventListener('click', getInput); 
-		console.log('wait 2 seconds, then load next');
-		setTimeout(() => {
-			updatePosition(0);		// "0" index -- the only choice, here
-			showMessage(current.text);
-		}, 2000);
+	if (message.text) {
+		var span_el = document.createElement('span');
+		span_el.innerHTML =  message.text;
+		message_el.appendChild(span_el);
 	}
 
+	if (message.image) {
+		var img_el = document.createElement('img');
+		img_el.setAttribute('src', 'foo.png');
+		message_el.appendChild(img_el);
+	}
+
+	chatWindow.appendChild(message_el);
 	step();
-};
+}
 
+/**
+ * Prepares to show next step either waiting with a timeout, or adding a prompt
+ * and waiting for the user to trigger next step manually.
+ */
+function step() {
+	var active = structure.messages[current];
 
+	if (active.input === false) {
+		setTimeout(() => {
+			nextMessage();
+		}, 2000);
+	} else {
+		displayInputType(active.input);
+	}
+}
 
+/**
+ * Jumps to the next message in the sequence.
+ */
+function nextMessage() {
+	current++;
+
+	if (current < structure.messages.length) {
+		showMessage(structure.messages[current]);
+	}
+}
+
+/**
+ * Displays a specific dialogue for a given input type.
+ * @param {string} inputType BEM style modifier for input type class selection
+ */
+function displayInputType(inputType) {
+	var activeInputField = document.querySelector('.user-input--' + inputType);
+	activeInputField.classList.add('active');
+}
+
+function clearInputFields() {
+	for (var i =0; i < inputFields.length; i++) {
+		inputFields[i].classList.remove('active');
+	}
+}
 
 ///////// START APP /////////
 function startApp() {
+	for (var i =0; i < inputFields.length; i++) {
+		inputFields[i].querySelector('.trigger-next').addEventListener("click", () => {
+			clearInputFields();
+			nextMessage();
+		});
+	}
 
 	// first, print first "text" from json
-	showMessage(structure.text);
-	step();
+	showMessage(structure.messages[current]);
 }

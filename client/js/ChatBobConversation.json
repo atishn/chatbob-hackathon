@@ -1,21 +1,40 @@
 {
-      "text": "Hi there! I’m Little Bob!",
-      "image": null,
-      "next": [{
-          "text": "Mmm… If you are here I think you already knew that.",
-          "image": "",
-          "next": [{
-            "text": "What’s your name?",
-            "image": null,
-            "action": true,
-            "next": [{
-              "needResponse": true,
-              "text": "Cool Mary. Nice to txt-meet you!",
-              "image": null
-            },
-            {
-              "text": "Option 2"
-            }]
-          }]
-        }]
- }
+  "messages": [
+    {
+      "text": "Hi Im bob",
+      "user": "bob",
+      "input": false
+    },
+    {
+      "text": "what is your name",
+      "user": "bob",
+      "input": "text"
+    },
+    {
+      "text": "Mary",
+      "user": "mary",
+      "input": false
+    },
+    {
+      "text": "Hi Mary",
+      "user": "bob",
+      "input": false
+    },
+    {
+      "text": "What are you looking for?",
+      "user": "bob",
+      "input": "sofa"
+    },
+    {
+      "text": false,
+      "image": "#.png",
+      "user": "mary",
+      "input": false
+    },
+    {
+      "text": "Cool. Good luck!",
+      "user": "bob",
+      "input": false
+    }
+  ]
+}
