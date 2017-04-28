@@ -9,13 +9,17 @@
 * Global
 **/
 $white: #FFFFFF;
+$x-lite-grey: #F6F8F9;
 $lite-grey: #E3E6E9;
 $blue-grey: #4E5974;
+$red: #D0011B;
 
 body {
+  background-color: $x-lite-grey;
   color: $blue-grey;
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
+  height: 100vh;
   line-height: 1.5;
 }
 
@@ -48,6 +52,7 @@ header {
 
   img, strong {
     display: inline-block;
+    margin: 0 4px;
     vertical-align: middle;
   }
 }
@@ -58,4 +63,45 @@ header {
 
 .settings-menu {
   text-align: right;
+}
+
+/**
+* Input Footer
+**/
+
+footer {
+  background: $white;
+  bottom: 0;
+  border-top: 1px solid $lite-grey;
+  box-sizing: border-box;
+  padding: 16px;
+  position: fixed;
+  width: 100%;
+
+  input[type=text], button {
+    border: 0;
+    border-radius: 6px;
+    box-sizing: border-box;
+    outline: 0;
+    padding: 8px 16px;
+    display: block;
+    float: left;
+  }
+
+  input[type=text] {
+    background: $lite-grey;
+    margin-right: 16px;
+    width: calc(82% - 16px);
+  }
+
+  button {
+    background: $red;
+    color: white;
+    width: 18%;
+    &:disabled {
+      opacity: 0.5;
+      overflow: hidden;
+      text-indent: -9999px;
+    }
+  }
 }
