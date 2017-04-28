@@ -1,0 +1,21 @@
+{
+      "text": "Hi there! I’m Little Bob!",
+      "image": null,
+      "next": [{
+          "text": "Mmm… If you are here I think you already knew that.",
+          "image": "",
+          "next": [{
+            "text": "What’s your name?",
+            "image": null,
+            "action": true,
+            "next": [{
+              "needResponse": true,
+              "text": "Cool Mary. Nice to txt-meet you!",
+              "image": null
+            },
+            {
+              "text": "Option 2"
+            }]
+          }]
+        }]
+ }
