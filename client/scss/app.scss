@@ -178,3 +178,35 @@ header {
     transform: translateY(0);
   }
 }
+
+.fake-website {
+  width: 100%;
+}
+
+// Logic and styling for showing chatbob box
+#toggle-chat {
+  display: none;
+}
+
+.bob-chat-activate {
+  display: block;
+  position: absolute;
+  top: 100px;
+  right: 30px;
+  width: 200px;
+  height: 45px;
+  background: red;
+  cursor: pointer;
+}
+
+.chatbob-iframe {
+  position: fixed;
+  bottom: 0;
+  right: 30px;
+  transform: translateY(100%);
+  transition: transform .6s;
+}
+
+#toggle-chat:checked ~ .chatbob-iframe {
+  transform: translateY(0);
+}

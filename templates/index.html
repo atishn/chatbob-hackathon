@@ -8,43 +8,14 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/app.css" />
 </head>
-<body>
-	<header class="clearfix">
-			<div class="main-menu">
-				<a href="#">
-					<img src="/assets/icon--menu.png" />
-				</a>
-			</div>
-			<div class="chatbob-profile">
-				<img src="/assets/bob-avatar.png" />
-				<strong>Little Bob</strong>
-			</div>
-			<div class="settings-menu">
-				<a href="#">
-					<img src="/assets/icon--settings.png" />
-				</a>
-			</div>
-		</header>
-
-<main id="chat">
-  <div class="response-block">Mary.</div>
-</main>
-
-<section class="user-input user-input--text">
-	<input id="response" type="text" class="chat-input"></input>
-	<button id="submit" class="chat-submit trigger-next">Send</button>
-</section>
-
-<section class="user-input user-input--sofa">
-	<span class="trigger-next">sofa</span> | chair | table
-</section>
-
-<section class="user-input user-input--camera">
-	<input id="response" type="file" class="chat-input"></input>
-	<button id="submit" class="chat-submit trigger-next">Send</button>
-</section>
-
-
-	<script src="js/ChatBob.js"></script>
+<body id="homepage">
+	<img class="fake-website" src="/assets/website.png" />
+	<input type="checkbox" id="toggle-chat" name="toggle-chat" />
+	<label for="toggle-chat" class="bob-chat-activate"></label>
+	<iframe
+		src="bobchat.html"
+		class="chatbob-iframe"
+		width="400px"
+		height="600px"></iframe>
 </body>
 </html>
