@@ -166,6 +166,7 @@ header {
   .chat-input {
     background: $grey-200;
     margin-right: 16px;
+    line-height: 30px;
     position: relative;
     width: calc(82% - 16px);
   }
@@ -179,10 +180,6 @@ header {
       overflow: hidden;
       text-indent: -9999px;
     }
-  }
-
-  a {
-    float: left;
   }
 }
 
@@ -228,6 +225,10 @@ header {
 
   .inner-scroll {
     width: 1000%;
+  }
+
+  a, img {
+    float: left;
   }
 }
 
