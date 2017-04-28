@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+/**
+* Includes
+**/
+@import "_normalize.scss";
+
+/**
+* Global
+**/
+$white: #FFFFFF;
+$lite-grey: #E3E6E9;
+$blue-grey: #4E5974;
+
+body {
+  color: $blue-grey;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+div {
+  box-sizing: border-box;
+  display: block;
+}
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/**
+* Mobile Header
+**/
+
+header {
+  background: $white;
+  border-bottom: 1px solid $lite-grey;
+  padding: 8px;
+
+  div {
+    float: left;
+    width: 33.33334%;
+  }
+
+  img, strong {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.main-menu, .settings-menu {
+  padding: inherit;
+}
+
+.settings-menu {
+  text-align: right;
+}
