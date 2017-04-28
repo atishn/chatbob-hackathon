@@ -24,7 +24,7 @@
     {
       "text": "Mary",
       "user": "mary",
-      "input": "text"
+      "input": false
     },
     {
       "text": "Cool Mary. Nice to txt-meet you!",
