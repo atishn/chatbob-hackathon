@@ -49,7 +49,7 @@
     },
     {
       "text": false,
-      "image": "#.png",
+      "image": "assets/room.png",
       "user": "mary",
       "input": false
     },
@@ -81,13 +81,24 @@
     },
     {
       "text": "For… sitting?",
+      "user": "bob",
+      "input": false
+    },
+    {
+      "text": false,
       "user": "mary",
+      "image":"assets/funny.png"
       "input": false
     },
     {
       "text": "You are right. Silly question. Let me rephrase that. Do you see any of these things happening over your sofa?",
       "user": "bob",
-      "input": "text"
+      "input": "options"
+    },
+    {
+      "text": false,
+      "user": "mary",
+      "input": "Kids, Pets"
     },
     {
       "text": "Got it! And how many people do you think will be using the sofa, in general?",
@@ -95,8 +106,18 @@
       "input": "text"
     },
     {
+      "text": "4",
+      "user": "mary",
+      "input": false
+    },
+    {
       "text": "Ok, almost there. Last question: what are you thinking in terms of budget?",
       "user": "bob",
+      "input": "text"
+    },
+    {
+      "text": "600",
+      "user": "mary",
       "input": false
     },
     {
