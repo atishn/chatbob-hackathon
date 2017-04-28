@@ -61,7 +61,6 @@ header {
 
   div {
     float: left;
-    width: 33.33334%;
   }
 
   img, strong {
@@ -73,10 +72,12 @@ header {
 
 .main-menu, .settings-menu {
   padding: inherit;
+  width: 15%;
 }
 
 .chatbob-profile {
   text-align: center;
+  width: 70%;
 }
 
 .settings-menu {
@@ -98,7 +99,8 @@ header {
   box-sizing: border-box;
   display: block;
   position: absolute;
-  padding: 16px 16px 16px 58px;
+  //padding: 16px 16px 16px 58px;
+  padding: 16px;
   width: 100%;
   z-index: 1;
 
@@ -250,6 +252,7 @@ header {
 }
 
 .chatbob-iframe {
+  border: none;
   position: fixed;
   bottom: 0;
   right: 30px;

@@ -24,7 +24,7 @@
     {
       "text": "Mary",
       "user": "mary",
-      "input": "text"
+      "input": false
     },
     {
       "text": "Cool Mary. Nice to txt-meet you!",
@@ -46,6 +46,12 @@
       "text": "First let’s get the colors right. Can you send me a photo of the room where you will put your new sofa? I’ll recommend you good color matches for your room.",
       "user": "bob",
       "input": "camera"
+    },
+    {
+      "text": false,
+      "image": "#.png",
+      "user": "mary",
+      "input": false
     },
     {
       "text": "Looks good! I love clients with good taste 👏 ",

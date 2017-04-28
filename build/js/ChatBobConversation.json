@@ -24,7 +24,7 @@
     {
       "text": "Mary",
       "user": "mary",
-      "input": "text"
+      "input": false
     },
     {
       "text": "Cool Mary. Nice to txt-meet you!",
@@ -46,6 +46,12 @@
       "text": "First let’s get the colors right. Can you send me a photo of the room where you will put your new sofa? I’ll recommend you good color matches for your room.",
       "user": "bob",
       "input": "camera"
+    },
+    {
+      "text": false,
+      "image": "#.png",
+      "user": "mary",
+      "input": false
     },
     {
       "text": "Looks good! I love clients with good taste 👏 ",
@@ -148,7 +154,7 @@
       "input": "text"
     },
     {
-      "text": "Finally, here’s the Alex Sofa. This is a best-seller at Bob’s. It’s beautiful, it’s easy to remove fur and it’s staing resistant.",
+      "text": "Finally, here’s the Alex Sofa. This is a best-seller at Bob’s. It’s beautiful, it’s easy to remove fur and it’s stain resistant.",
       "user": "bob",
       "input": false
     },
@@ -194,7 +200,7 @@
       "input": false
     },
     {
-      "text": "I can help you talking talking to them. You know I’m funny 😝It can make the choosing process a little but easier. ",
+      "text": "I can help you talking talking to them. You know I’m funny 😝 It can make the choosing process a little but easier. ",
       "user": "bob",
       "input": false
     }
