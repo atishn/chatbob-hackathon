@@ -9,13 +9,14 @@
 * Global
 **/
 $white: #FFFFFF;
-$x-lite-grey: #F6F8F9;
-$lite-grey: #E3E6E9;
+$grey-100: #F6F8F9;
+$grey-200: #E3E6E9;
+$grey-300: #EFF1F3;
 $blue-grey: #4E5974;
 $red: #D0011B;
 
 body {
-  background-color: $x-lite-grey;
+  background-color: $grey-100;
   color: $blue-grey;
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
@@ -42,7 +43,7 @@ div {
 
 header {
   background: $white;
-  border-bottom: 1px solid $lite-grey;
+  border-bottom: 1px solid $grey-200;
   padding: 8px;
 
   div {
@@ -61,8 +62,29 @@ header {
   padding: inherit;
 }
 
+.chatbob-profile {
+  text-align: center;
+}
+
 .settings-menu {
   text-align: right;
+}
+
+/**
+* Chat Window
+**/
+
+#chat {
+  bottom: 86px;
+  position: fixed;
+  padding: 16px;
+
+  div {
+    background: $white;
+    box-shadow: 0 6px 12px $grey-300;
+    margin-bottom: 12px;
+    padding: 16px;
+  }
 }
 
 /**
@@ -72,7 +94,7 @@ header {
 footer {
   background: $white;
   bottom: 0;
-  border-top: 1px solid $lite-grey;
+  border-top: 1px solid $grey-200;
   box-sizing: border-box;
   padding: 16px;
   position: fixed;
@@ -83,13 +105,13 @@ footer {
     border-radius: 6px;
     box-sizing: border-box;
     outline: 0;
-    padding: 8px 16px;
+    padding: 10px 16px;
     display: block;
     float: left;
   }
 
   input[type=text] {
-    background: $lite-grey;
+    background: $grey-200;
     margin-right: 16px;
     width: calc(82% - 16px);
   }

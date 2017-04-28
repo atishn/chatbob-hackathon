@@ -43,10 +43,10 @@ function step() {
 		// await response
 		console.log('do something');
 		// listen for user input
-		button.addEventListener('click', getInput); 
+		button.addEventListener('click', getInput);
 	}  else {
 	// OTHERWISE, WAIT AND SHOW NEXT
-		button.removeEventListener('click', getInput); 
+		button.removeEventListener('click', getInput);
 		console.log('wait 2 seconds, then load next');
 		setTimeout(() => {
 			updatePosition(0);		// "0" index -- the only choice, here
