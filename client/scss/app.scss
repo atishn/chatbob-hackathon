@@ -30,7 +30,7 @@ div {
 }
 
 .clearfix {
-  &:after {
+  &::after {
     content: "";
     display: table;
     clear: both;
@@ -44,7 +44,9 @@ div {
 header {
   background: $white;
   border-bottom: 1px solid $grey-200;
+  position: relative;
   padding: 8px;
+  z-index: 50;
 
   div {
     float: left;
@@ -76,22 +78,49 @@ header {
 
 #chat {
   bottom: 86px;
+  max-height: calc(100vh - 57px);
+  overflow: auto;
   position: fixed;
-  padding: 16px;
+  padding: 16px 16px 16px 58px;
+  z-index: 10;
 
   div {
     background: $white;
+    border-radius: 6px;
     box-shadow: 0 6px 12px $grey-300;
+    clear: both;
     margin-bottom: 12px;
     padding: 16px;
+    width: auto;
   }
+
+  .response-block {
+    background: $red;
+    border-bottom-right-radius: 0;
+    color: $white;
+    float: right;
+    position: relative;
+
+    &::before {
+      content: '';
+      background: transparent url(../assets/message-tail.png) no-repeat 0 0;
+      bottom: 0;
+      height: 9px;
+      left: 100%;
+      margin-bottom: -1px;
+      margin-left: -6px;
+      position: absolute;
+      width: 11px;
+    }
+  }
+
 }
 
 /**
 * Input Footer
 **/
 
-footer {
+.user-input {
   background: $white;
   bottom: 0;
   border-top: 1px solid $grey-200;
@@ -99,6 +128,7 @@ footer {
   padding: 16px;
   position: fixed;
   width: 100%;
+  z-index: 1;
 
   input[type=text], button {
     border: 0;
