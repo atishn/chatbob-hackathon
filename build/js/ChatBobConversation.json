@@ -3,6 +3,11 @@
     {
       "text": "Hi there! I’m Little Bob!",
       "user": "bob",
+      "input": "text"
+    },
+    {
+      "text": "Hi",
+      "user": "mary",
       "input": false
     },
     {
