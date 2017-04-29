@@ -151,6 +151,7 @@ header {
   padding: 16px;
   position: fixed;
   width: 100%;
+  z-index: 100;
 
   .chat-input, button {
     border: 0;
@@ -165,7 +166,6 @@ header {
 
   .chat-input {
     background: $grey-200;
-    margin-right: 16px;
     line-height: 30px;
     position: relative;
     width: calc(82% - 16px);
@@ -174,7 +174,7 @@ header {
   button {
     background: $red;
     color: white;
-    width: 18%;
+    margin-left: 16px;
     &:disabled {
       opacity: 0.5;
       overflow: hidden;
@@ -190,6 +190,10 @@ header {
   &.active {
     transform: translateY(0);
   }
+}
+
+.chat-submit {
+  width: 18%;
 }
 
 .user-input--sofa {
