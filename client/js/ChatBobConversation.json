@@ -67,7 +67,7 @@
     {
       "text": "Does this look right?",
       "user": "bob",
-      "input": "text"
+      "input": "buttons"
     },
     {
       "text": "Looks right!",
@@ -87,7 +87,7 @@
     {
       "text": false,
       "user": "mary",
-      "image":"assets/funny.png"
+      "image":"assets/funny.png",
       "input": false
     },
     {
