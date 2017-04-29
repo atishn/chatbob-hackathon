@@ -1,4 +1,3 @@
-
 // App structure stuffs
 // var structureJSON = require('ChatBobConversation.json');	// the json structure file
 var structure;

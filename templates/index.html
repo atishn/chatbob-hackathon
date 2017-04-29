@@ -12,10 +12,20 @@
 	<img class="fake-website" src="/assets/website.png" />
 	<input type="checkbox" id="toggle-chat" name="toggle-chat" />
 	<label for="toggle-chat" class="bob-chat-activate"></label>
-	<iframe
-		src="bobchat.html"
-		class="chatbob-iframe"
-		width="400px"
-		height="600px"></iframe>
+	<div class="iframe-wrapper">
+		<span id="close-window"></span>
+		<iframe
+			src="bobchat.html"
+			class="chatbob-iframe"
+			width="400px"
+			height="600px"></iframe>
+
+	</div>
+
+	<script>
+		document.getElementById("close-window").addEventListener("click", function(){
+			document.getElementById("toggle-chat").checked = false;
+		});
+	</script>
 </body>
 </html>
