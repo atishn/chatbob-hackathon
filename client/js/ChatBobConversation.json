@@ -3,6 +3,11 @@
     {
       "text": "Hi there! I’m Little Bob!",
       "user": "bob",
+      "input": "text"
+    },
+    {
+      "text": "Hi",
+      "user": "mary",
       "input": false
     },
     {
@@ -86,7 +91,7 @@
     },
     {
       "text": false,
-      "user": "mary",
+      "user": "bob",
       "image":"assets/funny.png",
       "input": false
     },
@@ -116,7 +121,7 @@
       "input": "text"
     },
     {
-      "text": "600",
+      "text": "Around $600",
       "user": "mary",
       "input": false
     },
@@ -151,7 +156,6 @@
       "user": "bob",
       "input": false
     },
-
 
     {
       "text": false,

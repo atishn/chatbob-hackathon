@@ -86,7 +86,11 @@
     },
     {
       "text": false,
+<<<<<<< HEAD
       "user": "mary",
+=======
+      "user": "bob",
+>>>>>>> a4ebc1bc9d0b7f288c02510ca446851fa71982fe
       "image":"assets/funny.png",
       "input": false
     },
@@ -116,7 +120,7 @@
       "input": "text"
     },
     {
-      "text": "600",
+      "text": "Around $600",
       "user": "mary",
       "input": false
     },
@@ -151,7 +155,6 @@
       "user": "bob",
       "input": false
     },
-
 
     {
       "text": false,
