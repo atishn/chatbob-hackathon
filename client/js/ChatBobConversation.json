@@ -167,7 +167,7 @@
       "text": false,
       "image": "assets/PreselySofa.png",
       "user": "bob",
-      "input": "text"
+      "input": "next"
     },
     {
       "text": "The second one is the Brava Power. Brava is a recliner, super confortable, and the fabric is stain free.",
@@ -181,9 +181,9 @@
     },
     {
       "text": false,
-      "text": "assets/brava.png",
+      "image": "assets/brava.png",
       "user": "bob",
-      "input": "text"
+      "input": "next"
     },
     {
       "text": "Finally, here’s the Alex Sofa. This is a best-seller at Bob’s. It’s beautiful, it’s easy to remove fur and it’s stain resistant.",
@@ -214,7 +214,7 @@
     {
       "text": "But tell, which ones you liked? ",
       "user": "bob",
-      "input": "text"
+      "input": "sofaOptions"
     },
     {
       "text": "My favorites are the Presley and the Alex.",
