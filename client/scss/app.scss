@@ -80,6 +80,20 @@ header {
   width: 15%;
 }
 
+.main-menu a {
+  width: 100%;
+  padding: 17px 0 0;
+  display: block;
+
+  span {
+    background: #D7DDE3;
+    display: block;
+    height: 7px;
+    width: 23px;
+    margin: auto;
+  }
+}
+
 .chatbob-profile {
   text-align: center;
   width: 70%;
