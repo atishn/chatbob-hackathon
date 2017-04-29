@@ -269,13 +269,13 @@ header {
 
     &:checked {
       & + label {
-        background: rgba(255,0,0,0.4) url(../assets/icon--checked.png) no-repeat center 25%;
+        background: rgba(255,0,0,0.4) url(../assets/icon--checked.png) no-repeat center 50%;
+        background-size: 72px 56px;
         position: absolute;
         width: 100%;
         top: 0;
         bottom: 0;
         display: block;
-        height: 180px;
         padding: 0;
         z-index: 1;
       }
