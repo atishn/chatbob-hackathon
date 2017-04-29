@@ -43,7 +43,7 @@
       "input": "sofa"
     },
     {
-      "text": "Sofa.",
+      "text": "I'm looking for a sofa.",
       "user": "mary",
       "input": false
     },
@@ -91,7 +91,7 @@
     },
     {
       "text": "For… sitting?",
-      "user": "mary",
+      "user": "bob",
       "input": false
     },
     {
