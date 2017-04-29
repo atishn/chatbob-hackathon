@@ -3,7 +3,7 @@
     {
       "text": "Hi there! I’m Little Bob!",
       "user": "bob",
-      "input": "text"
+      "input": "text1"
     },
     {
       "text": "Hi",
@@ -24,7 +24,7 @@
     {
       "text": "What’s your name?",
       "user": "bob",
-      "input": "text"
+      "input": "text2"
     },
     {
       "text": "Mary",
@@ -87,7 +87,7 @@
     {
       "text": "Great. Now tell me how your sofa will be used.",
       "user": "bob",
-      "input": "text"
+      "input": "text3"
     },
     {
       "text": "For… sitting?",
@@ -114,7 +114,7 @@
     {
       "text": "Got it! And how many people do you think will be using the sofa, in general?",
       "user": "bob",
-      "input": "text"
+      "input": "text4"
     },
     {
       "text": "4",
@@ -124,7 +124,7 @@
     {
       "text": "Ok, almost there. Last question: what are you thinking in terms of budget?",
       "user": "bob",
-      "input": "text"
+      "input": "text5"
     },
     {
       "text": "Around $600",
@@ -224,7 +224,7 @@
     {
       "text": "Excellent choices! Are you choosing this sofa alone or do you have more people choosing with you? Like family, or housemates?",
       "user": "bob",
-      "input": "text"
+      "input": "text6"
     },
     {
       "text": "I'm not deciding alone.",
