@@ -43,7 +43,7 @@
       "input": "sofa"
     },
     {
-      "text": "Sofa.",
+      "text": "I'm looking for a sofa.",
       "user": "mary",
       "input": false
     },
@@ -91,7 +91,7 @@
     },
     {
       "text": "For sitting...?",
-      "user": "mary",
+      "user": "bob",
       "input": false
     },
     {
@@ -228,7 +228,7 @@
     {
       "text": "Awesome! If you like, I can help make the process easier by talking to them. You know I’m funny 😝 Do you want my help?",
       "user": "bob",
-      "input": "text"
+      "input": "text7"
     },
     {
       "text": "Ok, you can help.",
@@ -243,17 +243,22 @@
     {
       "text": "Just let me know some quick things about him and we’ll decide on a sofa in no time! 🤞",
       "user": "bob",
-      "input": "text"
+      "input": "text8"
     },
     {
       "text": "John",
       "user": "mary",
-      "input": "text"
+      "input": "text9"
     },
     {
-      "text": "346-654-3452",
+      "text": "813-407-1720",
       "user": "mary",
       "input": false
+    },
+    {
+      "text": "Thank you.",
+      "user": "bob",
+      "input": "text10"
     }
   ]
 }
