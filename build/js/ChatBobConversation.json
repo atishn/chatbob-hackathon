@@ -221,44 +221,109 @@
       "input": "text6"
     },
     {
-      "text": "My husband is helping me.",
-      "user": "mary",
-      "input": false
-    },
-    {
-      "text": "Awesome! If you like, I can help make the process easier by talking to them. You know I’m funny 😝 Do you want my help?",
-      "user": "bob",
-      "input": "text7"
-    },
-    {
-      "text": "Ok, you can help.",
-      "user": "mary",
-      "input": false
-    },
-    {
-      "text": "Cool! I’ll show him the two options you liked (the Presley and the Alex) and maybe show some other options too, if he wants.",
+      "text": "Great. Here are links for more details about these sofas:",
       "user": "bob",
       "input": false
     },
     {
-      "text": "Just let me know some quick things about him and we’ll decide on a sofa in no time!🤞",
+      "text": "Presley: https://www.mybobs.com/presley-sofa",
       "user": "bob",
-      "input": "text8"
+      "input": false
     },
     {
-      "text": "John",
-      "user": "mary",
-      "input": "text9"
+      "text": "Alex: https://www.mybobs.com/alex-sofa-1",
+      "user": "bob",
+      "input": false
     },
     {
-      "text": "813-407-1720",
+      "text": "The most important difference between them is the material: Presley is leather and Ashton is fabric.",
+      "user": "bob",
+      "input": false
+    },
+    {
+      "text": "Do you have enough information to make a decision, or do you need more help?",
+      "user": "bob",
+      "input": "text"
+    },
+    {
+      "text": "I'd like to visit a store",
       "user": "mary",
       "input": false
     },
     {
-      "text": "Thank you.",
+      "text": "Let me take a look at your local inventory…",
       "user": "bob",
-      "input": "text10"
+      "input": false
+    },
+    {
+      "text": "Looks like the Presley and the Alex are available in these two showrooms near you. Please choose one:",
+      "user": "bob",
+      "input": false
+    },
+    {
+      "text": "BROOKLYN, 2520 Flatbush Ave, Brooklyn, NY 11234, (347) 415-8307",
+      "user": "bob",
+      "input": false
+    },
+    {
+      "text": "NEW YORK, 517 East 117th Street, New York, NY 10035, (646) 400-6180",
+      "user": "bob",
+      "input": false
+    },
+    {
+      "text": "Great, when do you want to stop in?",
+      "user": "bob",
+      "input": "text"
+    },
+    {
+      "text": "Next Saturday",
+      "user": "mary",
+      "input": "text"
+    },
+    {
+      "text": "We have these available times. What works for you?",
+      "user": "bob",
+      "input": "text"
+    },
+    {
+      "text": "Yes",
+      "user": "mary",
+      "input": false
+    },
+    {
+      "text": "Great, I'll send you a calendar invite. What's your email address?",
+      "user": "bob",
+      "input": "text"
+    },
+    {
+      "text": "mary@email.com",
+      "user": "mary",
+      "input": false
+    },
+    {
+      "text": "Do you want me to send it anyone else?",
+      "user": "bob",
+      "input": "text"
+    },
+    {
+      "text": "Yes, my husband.",
+      "user": "mary",
+      "input": false
+    },
+    {
+      "text": "What's his email address?",
+      "user": "bob",
+      "input": "text"
+    },
+    {
+      "text": "john@email.com",
+      "user": "mary",
+      "input": false
+    },
+    {
+      "text": "Great, sent! See you next Saturday!",
+      "user": "bob",
+      "input": false
     }
   ]
 }

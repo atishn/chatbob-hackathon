@@ -74,8 +74,12 @@
 			</section>
 
 			<section class="clearfix user-input user-input--buttons">
-				<button id="submit" class="trigger-next">Looks right!</button>
-				<button id="submit" class="">Not really...</button>
+				<nav class="outer-scroll">
+					<div class="inner-scroll">
+						<button id="submit" class="trigger-next">Looks right!</button>
+						<button id="submit" class="">Not really...</button>
+					</div>
+				</nav>
 			</section>
 
 			<section class="clearfix user-input user-input--options">
@@ -90,7 +94,11 @@
 			</section>
 
 			<section class="clearfix user-input user-input--next">
-				<button id="submit" class="trigger-next">Show me next</button>
+				<nav class="outer-scroll">
+					<div class="inner-scroll">
+						<button id="submit" class="trigger-next">Show me next</button>
+					</div>
+				</nav>
 			</section>
 
 			<section class="clearfix user-input user-input--sofaOptions">
@@ -100,6 +108,37 @@
 						<div href="#"><input type="checkbox" name="box2" value="box2"><label></label><small>Brava Recliner<span>$700.00</span></small><img src="/assets/brava.png" /></div>
 						<div href="#"><input type="checkbox" name="box3" value="box3"><label></label><small>Alex Sofa<span>$600.00</span></small><img src="/assets/alex.png" /></div>
 						<button id="submit" class="trigger-next">These are my favorites.</button>
+					</div>
+				</nav>
+			</section>
+
+			<section class="clearfix user-input user-input--stores">
+				<div class="half">
+					<small>BROOKLYN<br>2520 Flatbush Ave<br>Brooklyn, NY 11234<br>(347) 415-8307</small>
+					<button id="submit" class="trigger-next">Select</button>
+				</div>
+				<div class="half">
+					<small>NEW YORK<br>517 East 117th Street<br>New York, NY 10035<br>(646) 400-6180</small>
+					<button id="submit" class="">Select</button>
+				</div>
+			</section>
+
+			<section class="clearfix user-input user-input--days">
+				<nav class="outer-scroll">
+					<div class="inner-scroll">
+						<button id="submit" class="trigger-next">Next Saturday</button>
+						<button id="submit" class="">Next Sunday</button>
+						<button id="submit" class="">Next Monday</button>
+					</div>
+				</nav>
+			</section>
+
+			<section class="clearfix user-input user-input--times">
+				<nav class="outer-scroll">
+					<div class="inner-scroll">
+						<button id="submit" class="">10:30am</button>
+						<button id="submit" class="trigger-next">1pm</button>
+						<button id="submit" class="">4pm</button>
 					</div>
 				</nav>
 			</section>

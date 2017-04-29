@@ -24,7 +24,8 @@ body {
   height: 100vh;
   line-height: 1.5;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 small {
@@ -162,10 +163,10 @@ header {
       position: absolute;
       width: 11px;
     }
-  }
 
-  img {
-    float: left;
+    &::nth-child(4) {
+      height: 300px;
+    }
   }
 
 }
@@ -194,7 +195,7 @@ header {
     box-sizing: border-box;
     height: 44px;
     outline: 0;
-    padding: 10px 16px;
+    padding: 10px 0;
     display: block;
     float: left;
   }
@@ -340,7 +341,24 @@ header {
   }
   button {
     width: 66%;
-    padding-right: 16px;
+  }
+}
+
+.half {
+  border: 1px solid $grey-300;
+  border-radius: 6px;
+  width: 45%;
+  float: left;
+  padding: 16px 2.5%;
+  box-sizing: border-box;
+  margin-right: 2.5%;
+  span {
+    display: block;
+  }
+  button {
+    margin-top: 16px;
+    margin-left: 0;
+    width: 100%;
   }
 }
 
