@@ -37,7 +37,7 @@ function showMessage(message) {
 		message_el.appendChild(img_el);
 	}
 
-	chatWindow.appendChild(message_el);
+	chatWindow.appendChild(message_el).scrollIntoView({block: "end"});
 	step();
 }
 
