@@ -196,11 +196,11 @@ header {
   width: 18%;
 }
 
-.user-input--sofa {
+.user-input--sofa, .user-input--options {
   padding-bottom: 12px;
   z-index: 100;
 
-  a {
+  a, div {
     box-shadow: 0 6px 12px $grey-300;
     margin: 4px 8px 0 0;
   }
@@ -223,16 +223,59 @@ header {
   }
 }
 
+.user-input--options {
+  div {
+    float: left;
+    position: relative;
+    width: 180px;
+  }
+  input {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    opacity: 0;
+
+    &:checked {
+      & + label {
+        background: rgba(255,0,0,0.4) url(../assets/icon--checked.png) no-repeat center 25%;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        display: block;
+        height: 180px;
+        padding: 0;
+        z-index: 1;
+      }
+    }
+  }
+}
+
 .outer-scroll {
-  overflow-x: auto;
-  padding-bottom: 12px;
 
   .inner-scroll {
-    width: 1000%;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding: 0 0 8px;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
-  a, img {
-    float: left;
+  div, a, button {
+    display: inline-block;
+    width: 36.5%;
+    padding-right: 0px;
+    float: none;
+    vertical-align: bottom;
+    position: relative;
   }
 }
 

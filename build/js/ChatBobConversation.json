@@ -3,6 +3,11 @@
     {
       "text": "Hi there! I’m Little Bob!",
       "user": "bob",
+      "input": "text"
+    },
+    {
+      "text": "Hi",
+      "user": "mary",
       "input": false
     },
     {
@@ -86,11 +91,7 @@
     },
     {
       "text": false,
-<<<<<<< HEAD
-      "user": "mary",
-=======
       "user": "bob",
->>>>>>> a4ebc1bc9d0b7f288c02510ca446851fa71982fe
       "image":"assets/funny.png",
       "input": false
     },
