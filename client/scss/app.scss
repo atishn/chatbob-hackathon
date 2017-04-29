@@ -23,6 +23,8 @@ body {
   font-size: 1em;
   height: 100vh;
   line-height: 1.5;
+  position: relative;
+  overflow: hidden;
 }
 
 small {
@@ -55,7 +57,10 @@ div {
 header {
   background: $white;
   border-bottom: 1px solid $grey-200;
-  position: relative;
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
   padding: 8px;
   z-index: 2;
 
@@ -85,21 +90,29 @@ header {
 }
 
 /**
+* Messenger Window
+**/
+
+.messenger {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/**
 * Chat Window
 **/
 
 .chat-outer {
-  height: calc(100vh - 134px);
+  //height: calc(100vh - 134px);
   overflow-y: scroll;
   position: relative;
 }
 
 #chat {
-  //bottom: 0;
   box-sizing: border-box;
   display: block;
-  //position: absolute;
-  //padding: 16px 16px 16px 58px;
   padding: 16px;
   width: 100%;
   z-index: 1;
@@ -143,15 +156,19 @@ header {
 * Input Footer
 **/
 
+.chat-submit-area {
+  min-height: 77px;
+}
+
 .user-input {
   background: $white;
-  bottom: 0;
+  //bottom: 0;
   border-top: 1px solid $grey-200;
   box-sizing: border-box;
   padding: 16px;
-  position: fixed;
+  //position: fixed;
   width: 100%;
-  z-index: 100;
+  //z-index: 100;
 
   .chat-input, button {
     border: 0;
@@ -185,11 +202,18 @@ header {
 }
 
 .user-input {
-  transform: translateY(100%);
-  transition: transform .6s;
+  //transform: translateY(100%);
+  //transition: transform .6s;
+  transition: opacity .3s;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
 
   &.active {
-    transform: translateY(0);
+    //transform: translateY(0);
+    opacity: 1;
+    position: relative;
+    z-index: 300;
   }
 }
 
@@ -199,7 +223,7 @@ header {
 
 .user-input--sofa, .user-input--options {
   padding-bottom: 12px;
-  z-index: 100;
+  //z-index: 100;
 
   a, div {
     box-shadow: 0 6px 12px $grey-300;
@@ -331,4 +355,22 @@ header {
 
 #toggle-chat:checked ~ .chatbob-iframe {
   transform: translateY(0);
+}
+
+// Scrollbar
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: none;
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: none;
+	background-color: #555;
 }
