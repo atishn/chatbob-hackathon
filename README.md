@@ -1,1 +1,5 @@
 # chatbob
+
+npm install
+
+gulp
