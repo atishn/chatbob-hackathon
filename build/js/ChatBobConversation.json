@@ -3,6 +3,11 @@
     {
       "text": "Hi there! I’m Little Bob!",
       "user": "bob",
+      "input": "text1"
+    },
+    {
+      "text": "Hi",
+      "user": "mary",
       "input": false
     },
     {
@@ -12,19 +17,19 @@
     },
     {
       "text": false,
-      "text": "assets/smiley.png",
+      "image": "assets/smiley.png",
       "user": "bob",
       "input": false
     },
     {
       "text": "What’s your name?",
       "user": "bob",
-      "input": "text"
+      "input": "text2"
     },
     {
       "text": "Mary",
       "user": "mary",
-      "input": "text"
+      "input": false
     },
     {
       "text": "Cool Mary. Nice to txt-meet you!",
@@ -38,6 +43,11 @@
       "input": "sofa"
     },
     {
+      "text": "Sofa.",
+      "user": "mary",
+      "input": false
+    },
+    {
       "text": "Nice. We’ll get the perfect sofa for you. ",
       "user": "bob",
       "input": false
@@ -48,6 +58,12 @@
       "input": "camera"
     },
     {
+      "text": false,
+      "image": "assets/room.png",
+      "user": "mary",
+      "input": false
+    },
+    {
       "text": "Looks good! I love clients with good taste 👏 ",
       "user": "bob",
       "input": false
@@ -55,12 +71,13 @@
     {
       "text": "These are the colors I got:",
       "user": "bob",
+      "image": "assets/palette.png",
       "input": false
     },
     {
       "text": "Does this look right?",
       "user": "bob",
-      "input": "text"
+      "input": "buttons"
     },
     {
       "text": "Looks right!",
@@ -70,7 +87,7 @@
     {
       "text": "Great. Now tell me how your sofa will be used.",
       "user": "bob",
-      "input": "text"
+      "input": "text3"
     },
     {
       "text": "For… sitting?",
@@ -78,18 +95,40 @@
       "input": false
     },
     {
+      "text": false,
+      "user": "bob",
+      "image":"assets/funny.gif",
+      "input": false
+    },
+    {
       "text": "You are right. Silly question. Let me rephrase that. Do you see any of these things happening over your sofa?",
       "user": "bob",
-      "input": "text"
+      "input": "options"
+    },
+    {
+      "text": false,
+      "user": "mary",
+      "text": "Kids, Pets",
+      "input": false
     },
     {
       "text": "Got it! And how many people do you think will be using the sofa, in general?",
       "user": "bob",
-      "input": "text"
+      "input": "text4"
+    },
+    {
+      "text": "4",
+      "user": "mary",
+      "input": false
     },
     {
       "text": "Ok, almost there. Last question: what are you thinking in terms of budget?",
       "user": "bob",
+      "input": "text5"
+    },
+    {
+      "text": "Around $600",
+      "user": "mary",
       "input": false
     },
     {
@@ -124,12 +163,11 @@
       "input": false
     },
 
-
     {
       "text": false,
-      "text": "assets/PreselySofa.png",
+      "image": "assets/PreselySofa.png",
       "user": "bob",
-      "input": "text"
+      "input": "next"
     },
     {
       "text": "The second one is the Brava Power. Brava is a recliner, super confortable, and the fabric is stain free.",
@@ -143,9 +181,9 @@
     },
     {
       "text": false,
-      "text": "assets/brava.png",
+      "image": "assets/brava.png",
       "user": "bob",
-      "input": "text"
+      "input": "next"
     },
     {
       "text": "Finally, here’s the Alex Sofa. This is a best-seller at Bob’s. It’s beautiful, it’s easy to remove fur and it’s stain resistant.",
@@ -159,7 +197,7 @@
     },
     {
       "text": false,
-      "text": "assets/alex.png",
+      "image": "assets/alex.png",
       "user": "bob",
       "input": false
     },
@@ -176,7 +214,7 @@
     {
       "text": "But tell, which ones you liked? ",
       "user": "bob",
-      "input": "text"
+      "input": "sofaOptions"
     },
     {
       "text": "My favorites are the Presley and the Alex.",
@@ -186,7 +224,7 @@
     {
       "text": "Excellent choices! Are you choosing this sofa alone or do you have more people choosing with you? Like family, or housemates?",
       "user": "bob",
-      "input": "text"
+      "input": "text6"
     },
     {
       "text": "My husband is helping me.",

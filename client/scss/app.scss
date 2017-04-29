@@ -61,7 +61,6 @@ header {
 
   div {
     float: left;
-    width: 33.33334%;
   }
 
   img, strong {
@@ -73,10 +72,12 @@ header {
 
 .main-menu, .settings-menu {
   padding: inherit;
+  width: 15%;
 }
 
 .chatbob-profile {
   text-align: center;
+  width: 70%;
 }
 
 .settings-menu {
@@ -94,11 +95,12 @@ header {
 }
 
 #chat {
-  bottom: 0;
+  //bottom: 0;
   box-sizing: border-box;
   display: block;
-  position: absolute;
-  padding: 16px 16px 16px 58px;
+  //position: absolute;
+  //padding: 16px 16px 16px 58px;
+  padding: 16px;
   width: 100%;
   z-index: 1;
 
@@ -149,6 +151,7 @@ header {
   padding: 16px;
   position: fixed;
   width: 100%;
+  z-index: 100;
 
   .chat-input, button {
     border: 0;
@@ -163,7 +166,7 @@ header {
 
   .chat-input {
     background: $grey-200;
-    margin-right: 16px;
+    line-height: 30px;
     position: relative;
     width: calc(82% - 16px);
   }
@@ -171,16 +174,13 @@ header {
   button {
     background: $red;
     color: white;
-    width: 18%;
+    margin-left: 8px;
+    text-align: center;
     &:disabled {
       opacity: 0.5;
       overflow: hidden;
       text-indent: -9999px;
     }
-  }
-
-  a {
-    float: left;
   }
 }
 
@@ -193,11 +193,15 @@ header {
   }
 }
 
-.user-input--sofa {
+.chat-submit {
+  width: 18%;
+}
+
+.user-input--sofa, .user-input--options {
   padding-bottom: 12px;
   z-index: 100;
 
-  a {
+  a, div {
     box-shadow: 0 6px 12px $grey-300;
     margin: 4px 8px 0 0;
   }
@@ -220,12 +224,80 @@ header {
   }
 }
 
+.user-input--options, .user-input--sofaOptions {
+  div {
+    float: left;
+    position: relative;
+    width: 180px;
+    margin-right: 8px;
+  }
+  input {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    opacity: 0;
+
+    &:checked {
+      & + label {
+        background: rgba(255,0,0,0.4) url(../assets/icon--checked.png) no-repeat center 25%;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        display: block;
+        height: 180px;
+        padding: 0;
+        z-index: 1;
+      }
+    }
+  }
+}
+
 .outer-scroll {
-  overflow-x: auto;
-  padding-bottom: 12px;
 
   .inner-scroll {
-    width: 1000%;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding: 0 0 8px;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  div, a, button {
+    display: inline-block;
+    width: 36.5%;
+    padding-right: 0px;
+    float: none;
+    vertical-align: bottom;
+    position: relative;
+  }
+}
+
+.user-input--sofaOptions {
+  input:checked + label {
+    background-position: center center;
+    height: 234px;
+  }
+  div {
+    font-weight: 600;
+    width: 90%;
+    span {
+      font-weight: normal;
+      float: right;
+      padding-right: 4px;
+    }
+  }
+  button {
+    width: 66%;
+    padding-right: 16px;
   }
 }
 
@@ -241,15 +313,15 @@ header {
 .bob-chat-activate {
   display: block;
   position: absolute;
-  top: 100px;
-  right: 30px;
-  width: 200px;
-  height: 45px;
-  background: red;
+  top: 0;
+  right: 0;
+  width: 25%;
+  height: 50%;
   cursor: pointer;
 }
 
 .chatbob-iframe {
+  border: none;
   position: fixed;
   bottom: 0;
   right: 30px;

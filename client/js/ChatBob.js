@@ -33,11 +33,11 @@ function showMessage(message) {
 
 	if (message.image) {
 		var img_el = document.createElement('img');
-		img_el.setAttribute('src', 'foo.png');
+		img_el.setAttribute('src', message.image);
 		message_el.appendChild(img_el);
 	}
 
-	chatWindow.appendChild(message_el);
+	chatWindow.appendChild(message_el).scrollIntoView({block: "end"});
 	step();
 }
 
@@ -51,7 +51,7 @@ function step() {
 	if (active.input === false) {
 		setTimeout(() => {
 			nextMessage();
-		}, 2000);
+		}, 3200);
 	} else {
 		displayInputType(active.input);
 	}
