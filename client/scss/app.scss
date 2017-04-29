@@ -174,7 +174,8 @@ header {
   button {
     background: $red;
     color: white;
-    margin-left: 16px;
+    margin-left: 8px;
+    text-align: center;
     &:disabled {
       opacity: 0.5;
       overflow: hidden;
@@ -223,11 +224,12 @@ header {
   }
 }
 
-.user-input--options {
+.user-input--options, .user-input--sofaOptions {
   div {
     float: left;
     position: relative;
     width: 180px;
+    margin-right: 8px;
   }
   input {
     bottom: 0;
@@ -279,6 +281,26 @@ header {
   }
 }
 
+.user-input--sofaOptions {
+  input:checked + label {
+    background-position: center center;
+    height: 234px;
+  }
+  div {
+    font-weight: 600;
+    width: 90%;
+    span {
+      font-weight: normal;
+      float: right;
+      padding-right: 4px;
+    }
+  }
+  button {
+    width: 66%;
+    padding-right: 16px;
+  }
+}
+
 .fake-website {
   width: 100%;
 }
@@ -291,11 +313,10 @@ header {
 .bob-chat-activate {
   display: block;
   position: absolute;
-  top: 100px;
-  right: 30px;
-  width: 200px;
-  height: 45px;
-  //background: red;
+  top: 0;
+  right: 0;
+  width: 25%;
+  height: 50%;
   cursor: pointer;
 }
 

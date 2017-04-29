@@ -43,6 +43,11 @@
       "input": "sofa"
     },
     {
+      "text": "Sofa.",
+      "user": "mary",
+      "input": false
+    },
+    {
       "text": "Nice. We’ll get the perfect sofa for you. ",
       "user": "bob",
       "input": false
@@ -86,7 +91,7 @@
     },
     {
       "text": "For… sitting?",
-      "user": "bob",
+      "user": "mary",
       "input": false
     },
     {
@@ -103,7 +108,8 @@
     {
       "text": false,
       "user": "mary",
-      "input": "Kids, Pets"
+      "text": "Kids, Pets",
+      "input": false
     },
     {
       "text": "Got it! And how many people do you think will be using the sofa, in general?",
@@ -159,9 +165,9 @@
 
     {
       "text": false,
-      "text": "assets/PreselySofa.png",
+      "image": "assets/PreselySofa.png",
       "user": "bob",
-      "input": "text"
+      "input": "next"
     },
     {
       "text": "The second one is the Brava Power. Brava is a recliner, super confortable, and the fabric is stain free.",
@@ -175,9 +181,9 @@
     },
     {
       "text": false,
-      "text": "assets/brava.png",
+      "image": "assets/brava.png",
       "user": "bob",
-      "input": "text"
+      "input": "next"
     },
     {
       "text": "Finally, here’s the Alex Sofa. This is a best-seller at Bob’s. It’s beautiful, it’s easy to remove fur and it’s stain resistant.",
@@ -191,7 +197,7 @@
     },
     {
       "text": false,
-      "text": "assets/alex.png",
+      "image": "assets/alex.png",
       "user": "bob",
       "input": false
     },
@@ -208,7 +214,7 @@
     {
       "text": "But tell, which ones you liked? ",
       "user": "bob",
-      "input": "text"
+      "input": "sofaOptions"
     },
     {
       "text": "My favorites are the Presley and the Alex.",
