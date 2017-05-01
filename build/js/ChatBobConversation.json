@@ -292,11 +292,10 @@
     {
       "text": "Do you want me to send it anyone else?",
       "user": "bob",
-      "input": "text8"
+      "input": "yes-no"
     },
     {
-      "text": "Yes, to my husband.",
-      "customInput": true,
+      "text": "Yes!",
       "user": "mary",
       "input": false
     },
