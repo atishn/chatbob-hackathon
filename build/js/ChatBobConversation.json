@@ -3,11 +3,6 @@
     {
       "text": "Hi there! I’m Little Bob!",
       "user": "bob",
-      "input": "text1"
-    },
-    {
-      "text": "Hi",
-      "user": "mary",
       "input": false
     },
     {
@@ -32,7 +27,7 @@
       "input": false
     },
     {
-      "text": "Cool, Mary. Nice to text-meet you!",
+      "text": "Cool. Nice to text-meet you!",
       "user": "bob",
       "input": false
     },
@@ -90,7 +85,7 @@
       "input": false
     },
     {
-      "text": "For sitting...?",
+      "text": "For sitting",
       "user": "bob",
       "input": false
     },
@@ -216,11 +211,6 @@
       "input": false
     },
     {
-      "text": "Excellent choices! Are you choosing this sofa alone or are you buying it with family members or roommates?",
-      "user": "bob",
-      "input": "text6"
-    },
-    {
       "text": "Great. Here are links for more details about these sofas:",
       "user": "bob",
       "input": false
@@ -236,17 +226,17 @@
       "input": false
     },
     {
-      "text": "The most important difference between them is the material: Presley is leather and Ashton is fabric.",
+      "text": "The most important difference between them is the material: Presley is leather and Alex is fabric.",
       "user": "bob",
       "input": false
     },
     {
-      "text": "Do you have enough information to make a decision, or do you need more help?",
+      "text": "Do you have enough information to make a decision, or like to see them in store?",
       "user": "bob",
-      "input": "text"
+      "input": "store-visit"
     },
     {
-      "text": "I'd like to visit a store",
+      "text": "I'd like to see them in store",
       "user": "mary",
       "input": false
     },
@@ -258,7 +248,7 @@
     {
       "text": "Looks like the Presley and the Alex are available in these two showrooms near you. Please choose one:",
       "user": "bob",
-      "input": false
+      "input": "stores"
     },
     {
       "text": "BROOKLYN, 2520 Flatbush Ave, Brooklyn, NY 11234, (347) 415-8307",
@@ -266,34 +256,29 @@
       "input": false
     },
     {
-      "text": "NEW YORK, 517 East 117th Street, New York, NY 10035, (646) 400-6180",
-      "user": "bob",
-      "input": false
-    },
-    {
       "text": "Great, when do you want to stop in?",
       "user": "bob",
-      "input": "text"
+      "input": "days"
     },
     {
       "text": "Next Saturday",
       "user": "mary",
-      "input": "text"
+      "input": false
     },
     {
       "text": "We have these available times. What works for you?",
       "user": "bob",
-      "input": "text"
+      "input": "times"
     },
     {
-      "text": "Yes",
+      "text": "1pm",
       "user": "mary",
       "input": false
     },
     {
       "text": "Great, I'll send you a calendar invite. What's your email address?",
       "user": "bob",
-      "input": "text"
+      "input": "text7"
     },
     {
       "text": "mary@email.com",
@@ -303,17 +288,17 @@
     {
       "text": "Do you want me to send it anyone else?",
       "user": "bob",
-      "input": "text"
+      "input": "text8"
     },
     {
-      "text": "Yes, my husband.",
+      "text": "Yes, to my husband.",
       "user": "mary",
       "input": false
     },
     {
       "text": "What's his email address?",
       "user": "bob",
-      "input": "text"
+      "input": "text9"
     },
     {
       "text": "john@email.com",
