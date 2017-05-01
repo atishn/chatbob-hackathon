@@ -23,6 +23,7 @@
     },
     {
       "text": "Mary",
+      "customInput": true,
       "user": "mary",
       "input": false
     },

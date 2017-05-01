@@ -23,6 +23,7 @@
     },
     {
       "text": "Mary",
+      "customInput": true,
       "user": "mary",
       "input": false
     },
@@ -85,7 +86,7 @@
       "input": false
     },
     {
-      "text": "For sitting",
+      "text": "For sitting?",
       "user": "bob",
       "input": false
     },

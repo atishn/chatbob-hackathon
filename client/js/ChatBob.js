@@ -2,6 +2,7 @@
 // var structureJSON = require('ChatBobConversation.json');	// the json structure file
 var structure;
 var current = 0;
+var userInputText = '';
 var structureJSON = fetch('js/ChatBobConversation.json').then((response) => {
 	response.json().then((data) => {
 		structure = data; // JSON.parse(structureJSON);				// THIS parses the JSON into a javascript OBJECT
@@ -27,6 +28,9 @@ function showMessage(message) {
 	if (message.text) {
 		var span_el = document.createElement('span');
 		span_el.innerHTML =  message.text;
+		if (message.customInput === true ) {
+			span_el.innerHTML = userInputText;
+		}
 		message_el.appendChild(span_el);
 	}
 
@@ -85,7 +89,14 @@ function clearInputFields() {
 ///////// START APP /////////
 function startApp() {
 	for (var i =0; i < inputFields.length; i++) {
-		inputFields[i].querySelector('.trigger-next').addEventListener("click", () => {
+		inputFields[i].querySelector('.trigger-next').addEventListener("click", (e) => {
+
+			var parent =  e.target.parentNode;
+			if (parent.classList.contains('input-text')) {
+				var input = parent.querySelector('.chat-input');
+				userInputText = input.value;
+			}
+
 			clearInputFields();
 			nextMessage();
 		});
