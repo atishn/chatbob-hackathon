@@ -114,6 +114,7 @@
     },
     {
       "text": "3-4",
+      "customInput": true,
       "user": "mary",
       "input": false
     },
@@ -124,6 +125,7 @@
     },
     {
       "text": "Around $600",
+       "customInput": true,
       "user": "mary",
       "input": false
     },
@@ -283,6 +285,7 @@
     },
     {
       "text": "mary@email.com",
+       "customInput": true,
       "user": "mary",
       "input": false
     },
@@ -293,16 +296,18 @@
     },
     {
       "text": "Yes, to my husband.",
+      "customInput": true,
       "user": "mary",
       "input": false
     },
     {
-      "text": "What's his email address?",
+      "text": "What's email address?",
       "user": "bob",
       "input": "text9"
     },
     {
       "text": "john@email.com",
+      "customInput": true,
       "user": "mary",
       "input": false
     },

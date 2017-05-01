@@ -54,7 +54,7 @@ function step() {
 	if (active.input === false) {
 		setTimeout(() => {
 			nextMessage();
-		}, 2000);
+		}, 2500);
 	} else {
 		displayInputType(active.input);
 	}
