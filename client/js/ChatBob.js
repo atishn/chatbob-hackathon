@@ -32,15 +32,21 @@ function showMessage(message) {
 			span_el.innerHTML = userInputText;
 		}
 		message_el.appendChild(span_el);
+		chatWindow.appendChild(message_el).scrollIntoView({block: "end"});
 	}
 
 	if (message.image) {
 		var img_el = document.createElement('img');
 		img_el.setAttribute('src', message.image);
 		message_el.appendChild(img_el);
+
+		img_el.onload = function() { 
+			chatWindow.appendChild(message_el).scrollIntoView({block: "end"});
+		}
 	}
 
-	chatWindow.appendChild(message_el).scrollIntoView({block: "end"});
+	
+
 	step();
 }
 
